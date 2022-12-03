@@ -22,7 +22,7 @@ def procScore (opp, you):
 
     return tot
 
-def day1 (data):
+def part1 (data):
     mapping = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
     sums = [0 for i in range(6)]
 
@@ -36,7 +36,7 @@ def day1 (data):
 
     return max(sums)
 
-def day2 (data):
+def part2 (data):
     tot = 0
 
     for i in data:
@@ -72,5 +72,5 @@ if __name__ == "__main__":
     with open("input.txt", "r") as f:
         data = f.readlines()
 
-        print("Day 1:", day1(data))
-        print("Day 2:", day2(data))
+        print("Part 1:", part1(data))
+        print("Part 2:", part2(data))
